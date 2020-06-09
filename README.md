@@ -2,7 +2,7 @@
 Introduction
 
 
-Challenge 2: User Stories
+## Challenge 2: User Stories
 What are our objects
 What methods should they reply to
 1.
@@ -38,23 +38,21 @@ I’d like to see if a bike is working
 
 
 
-Challenge 3: 
+## Challenge 3:
 Objects	Messages
-Person	
+Person
 Bike	working?
 DockingStation	release_bike
 
-Challenge 4:
+## Challenge 4:
 
 Write down the type of error Name Error: Uninitialised Constant
- Write down the file path where the error happened: 4: from /home/ec2-user/.rvm/rubies/ruby-2.6.3/bin/irb:23:in `<main>'
- Write down the line number of the error: line 23
- Use the Ruby Documentation to find out what the error means: Error message with a class not being defined. 
- Suggest one way of solving the error: create a DockingStation Class. 
+Write down the file path where the error happened: 4: from /home/ec2-user/.rvm/rubies/ruby-2.6.3/bin/irb:23:in '<main>'
+Write down the line number of the error: line 23
+Use the Ruby Documentation to find out what the error means: Error message with a class not being defined.
+Suggest one way of solving the error: create a DockingStation Class.
 
+## Challenge 9:
 
-
-
-
-
-
+Without a unit test in describe, rspec will just check to see whether what you're describing exists and works (0 examples, 0 failures is what you're aiming for.)
+With a unit test in describe, rspec will run the test, and will have 1 example.
