@@ -3,9 +3,15 @@ require 'bike'
 
 describe DockingStation do
   let(:station) {DockingStation.new}
+  
   it {should respond_to(:release_bike)}
+  
   it "creates new instance of bike Class" do
     expect(station.release_bike).to be_a Bike
+  end
+   
+  it "checks instance of bike is working" do
+    expect((station.release_bike).working?).to be true
   end
 end
 
