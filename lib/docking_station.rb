@@ -4,4 +4,9 @@ class DockingStation
     Bike.new
  # p bike.working?
   end
+
+  def dock(bike)
+    return "#{bike} docked"
+  end
+
 end

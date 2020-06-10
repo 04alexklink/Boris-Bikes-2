@@ -3,6 +3,7 @@ require 'bike'
 
 describe DockingStation do
   let(:station) {DockingStation.new}
+  let(:bike) {Bike.new}
   
   it {should respond_to(:release_bike)}
   
@@ -13,6 +14,13 @@ describe DockingStation do
   it "checks instance of bike is working" do
     expect((station.release_bike).working?).to be true
   end
+
+  it {should respond_to(:dock)}
+
+  it "it does dock a bike" do
+    expect(station.dock(bike)).to eq("#{bike} docked")
+  end
+
 end
 
 
