@@ -3,7 +3,8 @@ class DockingStation
   attr_reader :bike
 
   def release_bike
-    Bike.new
+    fail 'there are no bikes to release' unless @bike
+    @bike
   end
 
   def dock(bike)
