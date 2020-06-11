@@ -15,13 +15,26 @@ describe DockingStation do
     expect((station.release_bike).working?).to be true
   end
 
-  it {should respond_to(:dock)}
-
-  it "it does dock a bike" do
-    expect(station.dock(bike)).to eq("#{bike} docked")
+    it {should respond_to(:dock)}
+   
+    it "docks with a bike as an argument" do
+    expect(station).to respond_to(:dock).with(1).argument
+  end
+    
+  before do
+    station.dock(:bike)
+  end
+      it "should return the instance of bike" do
+    expect(station.dock(bike)).to be_an_instance_of Bike
   end
 
 end
+
+  #it "it does dock a bike" do
+  #  expect(station.dock(bike)).to eq("#{bike} docked")
+  #end
+
+
 
 
 

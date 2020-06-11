@@ -3,19 +3,19 @@ class DockingStation
   attr_reader :bike
   def release_bike
     Bike.new
- # p bike.working?
   end
 
   def dock(bike)
-    @bike = bike
-    @array = [] 
-    @array.push(@bike)
+    #bike
+   # @bike = bike
+    #@array = [] 
+    #@array.push(@bike)
     
     #return "#{bike} docked"
   end
   
-  def bike_check
+ # def bike_check
     
-  end
+#  end
 
 end
