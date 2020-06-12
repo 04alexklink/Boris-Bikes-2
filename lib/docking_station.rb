@@ -6,6 +6,10 @@ class DockingStation
     fail 'there are no bikes to release' unless @bike
     @bike
   end
+  
+  def new_bike(name)
+    name = Bike.new
+  end
 
   def dock(bike)
     @bike = bike
