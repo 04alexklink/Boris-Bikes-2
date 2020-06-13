@@ -14,7 +14,7 @@ describe DockingStation do
    
   it "checks instance of bike is working" do
     station.dock(bike)
-    expect((station.release_bike).working?).to be true
+    expect((station.release_bike).working).to be true
   end
   
   it {is_expected.to respond_to(:dock).with(1).argument }
